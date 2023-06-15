@@ -1,4 +1,19 @@
 const computerSelection = getComputerChoice();
+const currentPlayerScore = 0;
+const currentComputerScore = 0;
+const scores = document.querySelector('#scores')
+
+const playerScore = document.createElement('p')
+playerScore.classList.add('playerScore')
+playerScore.textContent = `Player: ${currentPlayerScore}`
+
+const computerScore = document.createElement('p')
+computerScore.classList.add('playerScore')
+computerScore.textContent = `Player: ${currentComputerScore}`
+
+scores.appendChild(playerScore);
+scores.appendChild(computerScore);
+
 
 function getComputerChoice(){
     choices = ['rock', 'paper', 'scissors'];
